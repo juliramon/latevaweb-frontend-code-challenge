@@ -1,103 +1,528 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>Prueba Maquetación</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Prueba Maquetación</title>
-    <link href="css/app.css" rel="stylesheet" type="text/css" media="screen" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@200;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="./css/stylesheet.css"
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+    />
+    <link rel="stylesheet" href="./css/slick-theme.css" type="text/css" />
   </head>
   <body>
-    <header>
-      <div id="logo">
-        <a href="#" title=""><img src="assets/logo.svg" alt="" /></a>
+    <header class="header">
+      <div class="header-wrapper">
+        <div class="header-top">
+          <div class="header-top__col">
+            <ul class="header-top__language-selector">
+              <li class="active"><span>es</span></li>
+              <li><a href="#">en</a></li>
+            </ul>
+            <div class="header-top__search">
+              <form name="Buscar" action="send">
+                <input type="text" value="Buscar" />
+                <input type="submit" />
+              </form>
+            </div>
+          </div>
+          <div class="header-top__col" id="logo">
+            <a href="#" title="AP Watches"
+              ><img src="assets/logo.svg" alt="AP Watches"
+            /></a>
+          </div>
+          <div class="header-top__col">
+            <ul class="header-top__icons-list">
+              <li class="icon icon-user">
+                <a href="">
+                  <svg
+                    version="1.0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px"
+                    y="0px"
+                    width="32px"
+                    height="32px"
+                    viewBox="0 0 32 32"
+                    style="enable-background: new 0 0 32 32"
+                    xml:space="preserve"
+                  >
+                    <g id="Black"></g>
+                    <g id="White"></g>
+                    <g id="Color">
+                      <path
+                        style="fill: #ffffff"
+                        d="M25.8,7.2c-2.5-2.8-6.1-4.4-9.8-4.4C8.7,2.8,2.8,8.7,2.8,16c0,3.8,1.6,7.3,4.4,9.8v0L7.4,26
+		c0,0,0.1,0.1,0.1,0.1c0.2,0.2,0.5,0.4,0.7,0.6c0.1,0,0.1,0.1,0.2,0.1C8.7,27,9,27.2,9.3,27.3c0,0,0.1,0.1,0.1,0.1
+		c0.3,0.2,0.6,0.3,0.9,0.5h0c0.7,0.3,1.4,0.6,2.1,0.8l0,0c0.4,0.1,0.7,0.2,1.1,0.2l0.1,0c0.4,0.1,0.7,0.1,1.1,0.1l0.1,0
+		c0.4,0,0.7,0,1.1,0s0.7,0,1.1,0l0.1,0c0.4,0,0.7-0.1,1.1-0.1l0.1,0c0.4-0.1,0.7-0.1,1.1-0.2l0,0c0.7-0.2,1.5-0.5,2.2-0.8h0
+		c0.3-0.2,0.6-0.3,0.9-0.5c0,0,0.1-0.1,0.1-0.1c0.3-0.2,0.6-0.3,0.8-0.5c0.1,0,0.1-0.1,0.2-0.1c0.3-0.2,0.5-0.4,0.7-0.6
+		c0,0,0.1-0.1,0.1-0.1l0.2-0.2v0C30.2,21,30.7,12.6,25.8,7.2z M23.7,25.3L23.7,25.3c-0.3,0.2-0.5,0.4-0.7,0.6
+		c-0.1,0-0.1,0.1-0.2,0.1c-0.2,0.2-0.5,0.3-0.8,0.5l-0.1,0.1c-0.3,0.2-0.5,0.3-0.8,0.4L21,27c-0.9,0.4-1.9,0.7-2.9,0.9l-0.1,0
+		C17.7,28,17.4,28,17.1,28L17,28c-0.3,0-0.6,0-1,0s-0.6,0-1,0l-0.1,0c-0.3,0-0.6-0.1-0.9-0.1l-0.1,0c-1-0.2-1.9-0.5-2.9-0.9l-0.1,0
+		c-0.3-0.1-0.6-0.3-0.8-0.4L10,26.5c-0.3-0.1-0.5-0.3-0.8-0.5c-0.1,0-0.1-0.1-0.2-0.1c-0.2-0.2-0.4-0.3-0.7-0.5l-0.1-0.1v-2.2
+		c0-3.3,2.7-6,6-6l3.3,0c3.3,0,6,2.7,6,6V25.3z M11.6,11.6c0-2.4,2-4.4,4.4-4.4c2.4,0,4.4,2,4.4,4.4c0,2.4-2,4.4-4.4,4.4
+		C13.6,16,11.6,14,11.6,11.6z M24.8,24.3v-1.1c0-3.4-2.4-6.3-5.7-7c2.5-1.7,3.2-5.1,1.5-7.6c-1.7-2.5-5.1-3.2-7.6-1.5
+		c-2.5,1.7-3.2,5.1-1.5,7.6c0.4,0.6,0.9,1.1,1.5,1.5c-3.3,0.7-5.7,3.6-5.7,7v1.1C2.6,19.4,2.9,11.8,7.7,7.2
+		c4.9-4.6,12.5-4.4,17.1,0.5C29.2,12.4,29.2,19.6,24.8,24.3z"
+                      />
+                    </g>
+                    <g id="Capa_1"></g>
+                  </svg>
+                </a>
+              </li>
+              <li class="icon icon-heart">
+                <a href=""
+                  ><svg
+                    version="1.0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px"
+                    y="0px"
+                    width="32px"
+                    height="32px"
+                    viewBox="0 0 32 32"
+                    style="enable-background: new 0 0 32 32"
+                    xml:space="preserve"
+                  >
+                    <g id="Black"></g>
+                    <g id="White"></g>
+                    <g id="Color"></g>
+                    <g id="Capa_1">
+                      <g
+                        id="_001-heart-outline_1_"
+                        transform="translate(-1707.168 -58.821)"
+                      >
+                        <path
+                          id="Shape_2_"
+                          style="fill: #ffffff"
+                          d="M1723.2,86.5c-0.2,0-0.5-0.1-0.6-0.3c-0.9-1.3-1.8-2.4-3-3.5c-0.6-0.6-1.1-1-1.4-1.3
+			l-0.1-0.1c-0.3-0.3-0.8-0.7-1.4-1.3c-0.6-0.5-1.1-0.9-1.4-1.2c-0.3-0.2-0.7-0.6-1.2-1.2c-0.4-0.4-0.8-0.8-1.2-1.3
+			c-0.3-0.4-0.6-0.8-0.9-1.3c-0.3-0.5-0.6-1-0.8-1.5c-0.4-1.1-0.6-2.3-0.6-3.5c0-1.8,0.7-3.6,2-4.9c1.3-1.3,3.1-2,4.9-2
+			c1.1,0,2.2,0.3,3.2,0.8c1,0.5,1.8,1.2,2.5,2.1c1.3-1.8,3.4-2.8,5.6-2.8c1.8,0,3.6,0.7,4.9,2c1.3,1.3,2,3.1,2,4.9
+			c0,0.6-0.1,1.2-0.2,1.8c-0.2,1.1-0.6,2.1-1.2,3.1c-0.4,0.6-0.7,1-0.9,1.3c-0.4,0.4-0.8,0.9-1.2,1.3c-0.5,0.5-0.9,0.9-1.2,1.2
+			c-0.2,0.1-0.3,0.3-0.5,0.5c-0.2,0.2-0.5,0.4-0.8,0.7c-1,0.9-1.7,1.5-2.1,1.9c-0.5,0.5-1.1,1.1-1.8,1.9c-0.7,0.8-1.3,1.6-1.9,2.5
+			C1723.7,86.4,1723.4,86.5,1723.2,86.5z M1717.6,64.6c-1.5,0-2.9,0.6-3.9,1.6c-1,1-1.6,2.4-1.6,3.8c0,0.7,0.1,1.5,0.3,2.2l0.3,0.9
+			c0.2,0.5,0.5,1,0.8,1.5c0.1,0.1,0.1,0.2,0.2,0.3c0.2,0.3,0.4,0.6,0.7,0.8l0.2,0.2c0.2,0.2,0.4,0.4,0.5,0.6
+			c0.2,0.2,0.4,0.4,0.8,0.8l0.8,0.8l0.9,0.8c0.9,0.8,1.5,1.3,1.9,1.7c0.4,0.4,0.9,0.9,1.7,1.7c0.7,0.7,1.3,1.4,1.9,2.2
+			c0.6-0.8,1.2-1.5,1.8-2.2c0.7-0.8,1.3-1.4,1.8-1.8c0.5-0.5,1.2-1.1,1.9-1.7c1.5-1.3,2.5-2.3,3.1-3c1.2-1.2,2-2.7,2.3-4.4
+			c0.1-0.4,0.1-0.9,0.1-1.4c0-1.4-0.6-2.8-1.6-3.8c-1.8-1.8-4.6-2.1-6.8-0.7c-0.9,0.6-1.6,1.3-2,2.3c-0.1,0.3-0.4,0.4-0.7,0.4
+			c-0.3,0-0.5-0.2-0.7-0.4c-0.4-0.9-1.1-1.7-2-2.3C1719.6,64.9,1718.6,64.6,1717.6,64.6z"
+                        />
+                      </g>
+                    </g>
+                  </svg>
+                </a>
+              </li>
+              <li class="icon icon-cart">
+                <a href="">
+                  <svg
+                    version="1.0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px"
+                    y="0px"
+                    width="32px"
+                    height="32px"
+                    viewBox="0 0 32 32"
+                    style="enable-background: new 0 0 32 32"
+                    xml:space="preserve"
+                  >
+                    <g id="Black"></g>
+                    <g id="White"></g>
+                    <g id="Color">
+                      <path
+                        id="Shape_3_"
+                        style="fill: #ffffff"
+                        d="M22.7,29.3H9.3c-2.1,0.1-3.9-1.5-4-3.6c0,0,0,0,0,0c0,0,0,0,0,0L6.8,8.5
+		c0-0.4,0.3-0.7,0.7-0.7h3.1c0.1-2.9,2.5-5.2,5.4-5.2c2.8,0.1,5.1,2.3,5.2,5.2h3.1c0.4,0,0.7,0.3,0.7,0.7l1.5,17.2c0,0,0,0,0,0.1
+		C26.6,27.9,24.8,29.5,22.7,29.3z M8.3,9.3L6.8,25.8c0.2,1.2,1.3,2.1,2.5,2h13.4c1.3,0.1,2.4-0.8,2.5-2L23.7,9.3h-2.5v2.2
+		c0,0.4-0.3,0.7-0.7,0.7s-0.7-0.3-0.7-0.7V9.3h-7.6v2.2c0,0.4-0.3,0.7-0.7,0.7s-0.7-0.3-0.7-0.7V9.3H8.3z M16,4.1
+		c-2.1,0-3.7,1.7-3.8,3.7h7.6C19.7,5.8,18.1,4.1,16,4.1L16,4.1z"
+                      />
+                    </g>
+                    <g id="Capa_1"></g>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="header__bottom">
+          <nav>
+            <ul>
+              <li>Empresa</li>
+              <li>Nuestros relojes</li>
+              <li>Marcas</li>
+              <li>Venda su reloj</li>
+              <li>Noticias</li>
+              <li>Contacto</li>
+            </ul>
+          </nav>
+        </div>
       </div>
-      <div>
-        <form name="Buscar" action="send">
-          <input type="text" value="Buscar" />
-          <input type="submit" />
-        </form>
-      </div>
-
-      <div>
-        <ul>
-          <li class="active"><span>es</span></li>
-          <li><a href="#">en</a></li>
-        </ul>
-      </div>
-
-      <nav>
-        <ul>
-          <li>Empresa</li>
-          <li>Nuestros relojes</li>
-          <li>Marcas</li>
-          <li>Venda su reloj</li>
-          <li>Noticias</li>
-          <li>Contacto</li>
-        </ul>
-      </nav>
     </header>
-
-    <img
-      class=""
-      src="assets/slider1.jpg"
-      alt="slider1"
-      width="2000"
-      height="750"
-    />
-    <p>
-      360º<br />
-      Watch Experience
-    </p>
-    <p>
-      Mira lo que compras desde todos los ángulos...<br />experiencia de compra
-      online 360.
-    </p>
-    <a href="#" title="">Descúbre nuestros servicios</a>
-
-    <h1>Nuestros servicios</h1>
-    <p>Comprar</p>
-    <p>
-      Ponemos a su disposición un sistema de compar-venta fiable, rápido, con la
-      máxima trazabilidad y envío asegurado. Compramos relojes en toda España y
-      Comunidad Europea.
-    </p>
-    <a href="#" title="">Comprar un reloj</a>
-
-    <h2>Productos destacados</h2>
-    <div>
-      <div>Oferta</div>
-      <div>Novedad</div>
-      <img src="assets/producto1.jpg" alt="" />
-      <h3>Cartier</h3>
-      <p>
-        40mm polished 904l stainless case, screw-down and push buttons,
-        screw-down and push buttons with Triplock triple waterproofness.
-      </p>
-      <span>9.750€</span>
-    </div>
-    <div>
-      <div>Oferta</div>
-      <div>Novedad</div>
-      <img src="assets/producto2.jpg" alt="" />
-      <h3>Cartier</h3>
-      <p>
-        40mm polished 904l stainless case, screw-down and push buttons,
-        screw-down and push buttons with Triplock triple waterproofness.
-      </p>
-      <span>9.750€</span>
-    </div>
-    <div>
-      <div>Oferta</div>
-      <div>Novedad</div>
-      <img src="assets/producto3.jpg" alt="" />
-      <h3>Cartier</h3>
-      <p>
-        40mm polished 904l stainless case, screw-down and push buttons,
-        screw-down and push buttons with Triplock triple waterproofness.
-      </p>
-      <span>9.750€</span>
-    </div>
+    <section class="intro">
+      <img
+        class=""
+        src="assets/slider1.jpg"
+        alt="slider1"
+        width="2000"
+        height="750"
+      />
+      <div class="title-area">
+        <h1>
+          <span> 360º</span><br />
+          Watch Experience
+        </h1>
+        <p class="sub-h1">
+          Mira lo que compras desde todos los ángulos...<br />experiencia de
+          compra online 360.
+        </p>
+        <a href="#" title="">Descúbre nuestros servicios +</a>
+      </div>
+    </section>
+    <section class="our-services">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="title-area">
+              <h2>Nuestros servicios</h2>
+            </div>
+            <div class="our-services__blocks-wrapper">
+              <div class="our-services__block">
+                <h3>Comprar</h3>
+                <p>
+                  Ponemos a su disposición un sistema de compar-venta fiable,
+                  rápido, con la máxima trazabilidad y envío asegurado.
+                  Compramos relojes en toda España y Comunidad Europea.
+                </p>
+                <a href="#" title="">Comprar un reloj</a>
+              </div>
+              <div class="our-services__block">
+                <h3>Vender</h3>
+                <p>
+                  Ponemos a su disposición un sistema de compar-venta fiable,
+                  rápido, con la máxima trazabilidad y envío asegurado.
+                  Compramos relojes en toda España y Comunidad Europea.
+                </p>
+                <a href="#" title="">Vender mi reloj</a>
+              </div>
+              <div class="our-services__block">
+                <h3>Intercambiar</h3>
+                <p>
+                  Ponemos a su disposición un sistema de compar-venta fiable,
+                  rápido, con la máxima trazabilidad y envío asegurado.
+                  Compramos relojes en toda España y Comunidad Europea.
+                </p>
+                <a href="#" title="">Ver ofertas</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="featured-products">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="title-area">
+              <h2>Productos destacados</h2>
+            </div>
+            <div class="featured-products__wrapper">
+              <div class="featured-products__block">
+                <div class="featured-products__block__col">
+                  <svg
+                    version="1.0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px"
+                    y="0px"
+                    width="32px"
+                    height="32px"
+                    viewBox="0 0 32 32"
+                    style="enable-background: new 0 0 32 32"
+                    xml:space="preserve"
+                  >
+                    <g id="Black"></g>
+                    <g id="White"></g>
+                    <g id="Color"></g>
+                    <g id="Capa_1">
+                      <g
+                        id="_001-heart-outline"
+                        transform="translate(-1707.168 -58.821)"
+                      >
+                        <path
+                          id="Shape"
+                          style="fill: #af7e47"
+                          d="M1723.2,86.5c-0.2,0-0.5-0.1-0.6-0.3c-0.9-1.3-1.8-2.4-3-3.5c-0.6-0.6-1.1-1-1.4-1.3
+			l-0.1-0.1c-0.3-0.3-0.8-0.7-1.4-1.3c-0.6-0.5-1.1-0.9-1.4-1.2c-0.3-0.2-0.7-0.6-1.2-1.2c-0.4-0.4-0.8-0.8-1.2-1.3
+			c-0.3-0.4-0.6-0.8-0.9-1.3c-0.3-0.5-0.6-1-0.8-1.5c-0.4-1.1-0.6-2.3-0.6-3.5c0-1.8,0.7-3.6,2-4.9c1.3-1.3,3.1-2,4.9-2
+			c1.1,0,2.2,0.3,3.2,0.8c1,0.5,1.8,1.2,2.5,2.1c1.3-1.8,3.4-2.8,5.6-2.8c1.8,0,3.6,0.7,4.9,2c1.3,1.3,2,3.1,2,4.9
+			c0,0.6-0.1,1.2-0.2,1.8c-0.2,1.1-0.6,2.1-1.2,3.1c-0.4,0.6-0.7,1-0.9,1.3c-0.4,0.4-0.8,0.9-1.2,1.3c-0.5,0.5-0.9,0.9-1.2,1.2
+			c-0.2,0.1-0.3,0.3-0.5,0.5c-0.2,0.2-0.5,0.4-0.8,0.7c-1,0.9-1.7,1.5-2.1,1.9c-0.5,0.5-1.1,1.1-1.8,1.9c-0.7,0.8-1.3,1.6-1.9,2.5
+			C1723.7,86.4,1723.4,86.5,1723.2,86.5z M1717.6,64.6c-1.5,0-2.9,0.6-3.9,1.6c-1,1-1.6,2.4-1.6,3.8c0,0.7,0.1,1.5,0.3,2.2l0.3,0.9
+			c0.2,0.5,0.5,1,0.8,1.5c0.1,0.1,0.1,0.2,0.2,0.3c0.2,0.3,0.4,0.6,0.7,0.8l0.2,0.2c0.2,0.2,0.4,0.4,0.5,0.6
+			c0.2,0.2,0.4,0.4,0.8,0.8l0.8,0.8l0.9,0.8c0.9,0.8,1.5,1.3,1.9,1.7c0.4,0.4,0.9,0.9,1.7,1.7c0.7,0.7,1.3,1.4,1.9,2.2
+			c0.6-0.8,1.2-1.5,1.8-2.2c0.7-0.8,1.3-1.4,1.8-1.8c0.5-0.5,1.2-1.1,1.9-1.7c1.5-1.3,2.5-2.3,3.1-3c1.2-1.2,2-2.7,2.3-4.4
+			c0.1-0.4,0.1-0.9,0.1-1.4c0-1.4-0.6-2.8-1.6-3.8c-1.8-1.8-4.6-2.1-6.8-0.7c-0.9,0.6-1.6,1.3-2,2.3c-0.1,0.3-0.4,0.4-0.7,0.4
+			c-0.3,0-0.5-0.2-0.7-0.4c-0.4-0.9-1.1-1.7-2-2.3C1719.6,64.9,1718.6,64.6,1717.6,64.6z"
+                        />
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+                <div class="featured-products__block__col">
+                  <img src="assets/producto1.jpg" alt="" />
+                </div>
+                <div class="featured-products__block__col">
+                  <div class="col-top">
+                    <div>Oferta</div>
+                    <div>Novedad</div>
+                  </div>
+                  <div class="col-bottom">
+                    <h3>Cartier</h3>
+                    <p>
+                      40mm polished 904l stainless case, screw-down and push
+                      buttons, screw-down and push buttons with Triplock triple
+                      waterproofness.
+                    </p>
+                    <span class="featured-products__block__price"
+                      >9.750€
+                      <svg
+                        version="1.0"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        x="0px"
+                        y="0px"
+                        width="32px"
+                        height="32px"
+                        viewBox="0 0 32 32"
+                        style="enable-background: new 0 0 32 32"
+                        xml:space="preserve"
+                      >
+                        <g id="Black"></g>
+                        <g id="White"></g>
+                        <g id="Color">
+                          <path
+                            id="Shape_1_"
+                            style="fill: #af7e47"
+                            d="M22.7,29.3H9.3c-2.1,0.1-3.9-1.5-4-3.6c0,0,0,0,0,0c0,0,0,0,0,0L6.8,8.5
+		c0-0.4,0.3-0.7,0.7-0.7h3.1c0.1-2.9,2.5-5.2,5.4-5.2c2.8,0.1,5.1,2.3,5.2,5.2h3.1c0.4,0,0.7,0.3,0.7,0.7l1.5,17.2c0,0,0,0,0,0.1
+		C26.6,27.9,24.8,29.5,22.7,29.3z M8.3,9.3L6.8,25.8c0.2,1.2,1.3,2.1,2.5,2h13.4c1.3,0.1,2.4-0.8,2.5-2L23.7,9.3h-2.5v2.2
+		c0,0.4-0.3,0.7-0.7,0.7s-0.7-0.3-0.7-0.7V9.3h-7.6v2.2c0,0.4-0.3,0.7-0.7,0.7s-0.7-0.3-0.7-0.7V9.3H8.3z M16,4.1
+		c-2.1,0-3.7,1.7-3.8,3.7h7.6C19.7,5.8,18.1,4.1,16,4.1L16,4.1z"
+                          />
+                        </g>
+                        <g id="Capa_1"></g>
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="featured-products__block">
+                <div class="featured-products__block__col">
+                  <svg
+                    version="1.0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px"
+                    y="0px"
+                    width="32px"
+                    height="32px"
+                    viewBox="0 0 32 32"
+                    style="enable-background: new 0 0 32 32"
+                    xml:space="preserve"
+                  >
+                    <g id="Black"></g>
+                    <g id="White"></g>
+                    <g id="Color"></g>
+                    <g id="Capa_1">
+                      <g
+                        id="_001-heart-outline"
+                        transform="translate(-1707.168 -58.821)"
+                      >
+                        <path
+                          id="Shape"
+                          style="fill: #af7e47"
+                          d="M1723.2,86.5c-0.2,0-0.5-0.1-0.6-0.3c-0.9-1.3-1.8-2.4-3-3.5c-0.6-0.6-1.1-1-1.4-1.3
+			l-0.1-0.1c-0.3-0.3-0.8-0.7-1.4-1.3c-0.6-0.5-1.1-0.9-1.4-1.2c-0.3-0.2-0.7-0.6-1.2-1.2c-0.4-0.4-0.8-0.8-1.2-1.3
+			c-0.3-0.4-0.6-0.8-0.9-1.3c-0.3-0.5-0.6-1-0.8-1.5c-0.4-1.1-0.6-2.3-0.6-3.5c0-1.8,0.7-3.6,2-4.9c1.3-1.3,3.1-2,4.9-2
+			c1.1,0,2.2,0.3,3.2,0.8c1,0.5,1.8,1.2,2.5,2.1c1.3-1.8,3.4-2.8,5.6-2.8c1.8,0,3.6,0.7,4.9,2c1.3,1.3,2,3.1,2,4.9
+			c0,0.6-0.1,1.2-0.2,1.8c-0.2,1.1-0.6,2.1-1.2,3.1c-0.4,0.6-0.7,1-0.9,1.3c-0.4,0.4-0.8,0.9-1.2,1.3c-0.5,0.5-0.9,0.9-1.2,1.2
+			c-0.2,0.1-0.3,0.3-0.5,0.5c-0.2,0.2-0.5,0.4-0.8,0.7c-1,0.9-1.7,1.5-2.1,1.9c-0.5,0.5-1.1,1.1-1.8,1.9c-0.7,0.8-1.3,1.6-1.9,2.5
+			C1723.7,86.4,1723.4,86.5,1723.2,86.5z M1717.6,64.6c-1.5,0-2.9,0.6-3.9,1.6c-1,1-1.6,2.4-1.6,3.8c0,0.7,0.1,1.5,0.3,2.2l0.3,0.9
+			c0.2,0.5,0.5,1,0.8,1.5c0.1,0.1,0.1,0.2,0.2,0.3c0.2,0.3,0.4,0.6,0.7,0.8l0.2,0.2c0.2,0.2,0.4,0.4,0.5,0.6
+			c0.2,0.2,0.4,0.4,0.8,0.8l0.8,0.8l0.9,0.8c0.9,0.8,1.5,1.3,1.9,1.7c0.4,0.4,0.9,0.9,1.7,1.7c0.7,0.7,1.3,1.4,1.9,2.2
+			c0.6-0.8,1.2-1.5,1.8-2.2c0.7-0.8,1.3-1.4,1.8-1.8c0.5-0.5,1.2-1.1,1.9-1.7c1.5-1.3,2.5-2.3,3.1-3c1.2-1.2,2-2.7,2.3-4.4
+			c0.1-0.4,0.1-0.9,0.1-1.4c0-1.4-0.6-2.8-1.6-3.8c-1.8-1.8-4.6-2.1-6.8-0.7c-0.9,0.6-1.6,1.3-2,2.3c-0.1,0.3-0.4,0.4-0.7,0.4
+			c-0.3,0-0.5-0.2-0.7-0.4c-0.4-0.9-1.1-1.7-2-2.3C1719.6,64.9,1718.6,64.6,1717.6,64.6z"
+                        />
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+                <div class="featured-products__block__col">
+                  <div class="featured-products__block__col">
+                    <img src="assets/producto2.jpg" alt="" />
+                  </div>
+                </div>
+                <div class="featured-products__block__col">
+                  <div class="col-top">
+                    <div>Oferta</div>
+                    <div>Novedad</div>
+                  </div>
+                  <div class="col-bottom">
+                    <h3>Cartier</h3>
+                    <p>
+                      40mm polished 904l stainless case, screw-down and push
+                      buttons, screw-down and push buttons with Triplock triple
+                      waterproofness.
+                    </p>
+                    <span class="featured-products__block__price"
+                      >9.750€
+                      <svg
+                        version="1.0"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        x="0px"
+                        y="0px"
+                        width="32px"
+                        height="32px"
+                        viewBox="0 0 32 32"
+                        style="enable-background: new 0 0 32 32"
+                        xml:space="preserve"
+                      >
+                        <g id="Black"></g>
+                        <g id="White"></g>
+                        <g id="Color">
+                          <path
+                            id="Shape_1_"
+                            style="fill: #af7e47"
+                            d="M22.7,29.3H9.3c-2.1,0.1-3.9-1.5-4-3.6c0,0,0,0,0,0c0,0,0,0,0,0L6.8,8.5
+		c0-0.4,0.3-0.7,0.7-0.7h3.1c0.1-2.9,2.5-5.2,5.4-5.2c2.8,0.1,5.1,2.3,5.2,5.2h3.1c0.4,0,0.7,0.3,0.7,0.7l1.5,17.2c0,0,0,0,0,0.1
+		C26.6,27.9,24.8,29.5,22.7,29.3z M8.3,9.3L6.8,25.8c0.2,1.2,1.3,2.1,2.5,2h13.4c1.3,0.1,2.4-0.8,2.5-2L23.7,9.3h-2.5v2.2
+		c0,0.4-0.3,0.7-0.7,0.7s-0.7-0.3-0.7-0.7V9.3h-7.6v2.2c0,0.4-0.3,0.7-0.7,0.7s-0.7-0.3-0.7-0.7V9.3H8.3z M16,4.1
+		c-2.1,0-3.7,1.7-3.8,3.7h7.6C19.7,5.8,18.1,4.1,16,4.1L16,4.1z"
+                          />
+                        </g>
+                        <g id="Capa_1"></g>
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="featured-products__block">
+                <div class="featured-products__block__col">
+                  <svg
+                    version="1.0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px"
+                    y="0px"
+                    width="32px"
+                    height="32px"
+                    viewBox="0 0 32 32"
+                    style="enable-background: new 0 0 32 32"
+                    xml:space="preserve"
+                  >
+                    <g id="Black"></g>
+                    <g id="White"></g>
+                    <g id="Color"></g>
+                    <g id="Capa_1">
+                      <g
+                        id="_001-heart-outline"
+                        transform="translate(-1707.168 -58.821)"
+                      >
+                        <path
+                          id="Shape"
+                          style="fill: #af7e47"
+                          d="M1723.2,86.5c-0.2,0-0.5-0.1-0.6-0.3c-0.9-1.3-1.8-2.4-3-3.5c-0.6-0.6-1.1-1-1.4-1.3
+			l-0.1-0.1c-0.3-0.3-0.8-0.7-1.4-1.3c-0.6-0.5-1.1-0.9-1.4-1.2c-0.3-0.2-0.7-0.6-1.2-1.2c-0.4-0.4-0.8-0.8-1.2-1.3
+			c-0.3-0.4-0.6-0.8-0.9-1.3c-0.3-0.5-0.6-1-0.8-1.5c-0.4-1.1-0.6-2.3-0.6-3.5c0-1.8,0.7-3.6,2-4.9c1.3-1.3,3.1-2,4.9-2
+			c1.1,0,2.2,0.3,3.2,0.8c1,0.5,1.8,1.2,2.5,2.1c1.3-1.8,3.4-2.8,5.6-2.8c1.8,0,3.6,0.7,4.9,2c1.3,1.3,2,3.1,2,4.9
+			c0,0.6-0.1,1.2-0.2,1.8c-0.2,1.1-0.6,2.1-1.2,3.1c-0.4,0.6-0.7,1-0.9,1.3c-0.4,0.4-0.8,0.9-1.2,1.3c-0.5,0.5-0.9,0.9-1.2,1.2
+			c-0.2,0.1-0.3,0.3-0.5,0.5c-0.2,0.2-0.5,0.4-0.8,0.7c-1,0.9-1.7,1.5-2.1,1.9c-0.5,0.5-1.1,1.1-1.8,1.9c-0.7,0.8-1.3,1.6-1.9,2.5
+			C1723.7,86.4,1723.4,86.5,1723.2,86.5z M1717.6,64.6c-1.5,0-2.9,0.6-3.9,1.6c-1,1-1.6,2.4-1.6,3.8c0,0.7,0.1,1.5,0.3,2.2l0.3,0.9
+			c0.2,0.5,0.5,1,0.8,1.5c0.1,0.1,0.1,0.2,0.2,0.3c0.2,0.3,0.4,0.6,0.7,0.8l0.2,0.2c0.2,0.2,0.4,0.4,0.5,0.6
+			c0.2,0.2,0.4,0.4,0.8,0.8l0.8,0.8l0.9,0.8c0.9,0.8,1.5,1.3,1.9,1.7c0.4,0.4,0.9,0.9,1.7,1.7c0.7,0.7,1.3,1.4,1.9,2.2
+			c0.6-0.8,1.2-1.5,1.8-2.2c0.7-0.8,1.3-1.4,1.8-1.8c0.5-0.5,1.2-1.1,1.9-1.7c1.5-1.3,2.5-2.3,3.1-3c1.2-1.2,2-2.7,2.3-4.4
+			c0.1-0.4,0.1-0.9,0.1-1.4c0-1.4-0.6-2.8-1.6-3.8c-1.8-1.8-4.6-2.1-6.8-0.7c-0.9,0.6-1.6,1.3-2,2.3c-0.1,0.3-0.4,0.4-0.7,0.4
+			c-0.3,0-0.5-0.2-0.7-0.4c-0.4-0.9-1.1-1.7-2-2.3C1719.6,64.9,1718.6,64.6,1717.6,64.6z"
+                        />
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+                <div class="featured-products__block__col">
+                  <img src="assets/producto3.jpg" alt="" />
+                </div>
+                <div class="featured-products__block__col">
+                  <div class="col-top">
+                    <div>Oferta</div>
+                    <div>Novedad</div>
+                  </div>
+                  <div class="col-bottom">
+                    <h3>Cartier</h3>
+                    <p>
+                      40mm polished 904l stainless case, screw-down and push
+                      buttons, screw-down and push buttons with Triplock triple
+                      waterproofness.
+                    </p>
+                    <span class="featured-products__block__price"
+                      >9.750€
+                      <svg
+                        version="1.0"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        x="0px"
+                        y="0px"
+                        width="32px"
+                        height="32px"
+                        viewBox="0 0 32 32"
+                        style="enable-background: new 0 0 32 32"
+                        xml:space="preserve"
+                      >
+                        <g id="Black"></g>
+                        <g id="White"></g>
+                        <g id="Color">
+                          <path
+                            id="Shape_1_"
+                            style="fill: #af7e47"
+                            d="M22.7,29.3H9.3c-2.1,0.1-3.9-1.5-4-3.6c0,0,0,0,0,0c0,0,0,0,0,0L6.8,8.5
+		c0-0.4,0.3-0.7,0.7-0.7h3.1c0.1-2.9,2.5-5.2,5.4-5.2c2.8,0.1,5.1,2.3,5.2,5.2h3.1c0.4,0,0.7,0.3,0.7,0.7l1.5,17.2c0,0,0,0,0,0.1
+		C26.6,27.9,24.8,29.5,22.7,29.3z M8.3,9.3L6.8,25.8c0.2,1.2,1.3,2.1,2.5,2h13.4c1.3,0.1,2.4-0.8,2.5-2L23.7,9.3h-2.5v2.2
+		c0,0.4-0.3,0.7-0.7,0.7s-0.7-0.3-0.7-0.7V9.3h-7.6v2.2c0,0.4-0.3,0.7-0.7,0.7s-0.7-0.3-0.7-0.7V9.3H8.3z M16,4.1
+		c-2.1,0-3.7,1.7-3.8,3.7h7.6C19.7,5.8,18.1,4.1,16,4.1L16,4.1z"
+                          />
+                        </g>
+                        <g id="Capa_1"></g>
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- 
 <h2>Nuestras marcas</h2>
@@ -163,5 +588,13 @@
 
 </footer>
 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/functions.js"></script>
+    <script src="./js/slick.min.js"></script>
   </body>
 </html>
