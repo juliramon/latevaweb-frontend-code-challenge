@@ -159,16 +159,30 @@ h3 {
   position: relative;
 }
 
+.intro .slick,
+.intro .slick-track,
+.intro .slick-slide {
+  height: 750px;
+  overflow: hidden;
+}
+
+.intro .slick-track {
+  display: flex;
+  align-items: flex-start;
+}
+
 .intro img {
   position: absolute;
   width: 100%;
 }
 
 .intro .title-area {
-  position: absolute;
-  left: 300px;
-  z-index: 1000;
-  bottom: 100px;
+  position: absolute !important;
+  left: 300px !important;
+  z-index: 1000 !important;
+  bottom: 150px !important;
+  top: auto !important;
+  opacity: 1 !important;
 }
 
 .intro .title-area h1 {
@@ -192,7 +206,7 @@ h3 {
 .intro .title-area a {
   display: block;
   text-transform: uppercase;
-  margin-top: 20px;
+  margin-top: 50px;
   font-size: 0.8rem;
   text-decoration: none;
   color: #af7e47;
@@ -205,6 +219,7 @@ h3 {
   display: flex;
   justify-content: center;
   width: 100%;
+  z-index: 1000;
 }
 
 .intro .scroll-down button {

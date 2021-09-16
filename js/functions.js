@@ -4,10 +4,12 @@ scrollDownButton.addEventListener("click", () =>
   servicesSection.scrollIntoView()
 );
 
-// $(document).ready(() => {
-//   $(".intro .slick").slick({
-//     infinite: false,
-//     dots: false,
-//     slidesToShow: 1,
-//   });
-// });
+$(document).ready(() => {
+  $(".intro .slick").slick({
+    infinite: false,
+    speed: 500,
+    fade: true,
+    dots: false,
+    cssEase: "linear",
+  });
+});
