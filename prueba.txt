@@ -1,0 +1,18 @@
+PRUEBA TÉCNICA FRONTEND
+---
+1. Formatear página según diseño dado (https://invis.io/RAJSXZY28PF#/300438830_Home_-2-). Puedes usar Bootstrap5 o TailwindCSS (insertar CDN) y atendiento al mobile first.
+2. Crear un slider (plugin Glide slider o el que quieras) sin dots.
+3. Listado de relojes (no usar cards de boostrap).
+---
+4. Extras:
+-Button animate down del slider hasta siguiente section, con vanilla js.
+-Menú burguer mobile funcional.
+
+
+Criterios de valoración:
+-Acabar las tres primeas sections del ejercicio (mín. header, slider, nuestros servicios, listado relojes).
+-Semejanza de la vista respecto del diseño dado.
+-Limpieza y pulcritud del código.
+
+
+Tiempo: 2 h.
