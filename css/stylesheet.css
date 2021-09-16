@@ -9,6 +9,7 @@ html {
   -ms-text-size-adjust: 100%;
   -ms-overflow-style: scrollbar;
   -webkit-tap-highlight-color: transparent;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -160,6 +161,7 @@ h3 {
 
 .intro img {
   position: absolute;
+  width: 100%;
 }
 
 .intro .title-area {
@@ -195,6 +197,19 @@ h3 {
   text-decoration: none;
   color: #af7e47;
   font-weight: bold;
+}
+
+.intro .scroll-down {
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.intro .scroll-down button {
+  background-color: transparent;
+  border: none;
 }
 
 /*STYLES OUR SERVICES*/
